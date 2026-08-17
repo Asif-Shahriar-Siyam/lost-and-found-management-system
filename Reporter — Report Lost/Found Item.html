@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporter — Report Lost/Found Item</title>
+</head>
+<body>
+
+    <header>
+        <h1>REPORTER — REPORT LOST/FOUND ITEM</h1>
+        <h2>LOST &amp; FOUND</h2>
+        <a href="#">Dashboard</a>
+        <a href="#">Report Item</a>
+        <a href="#">My Reports</a>
+        <a href="#">Profile</a>
+        <button>Logout</button>
+    </header>
+
+    <hr>
+
+    <div class="report-form-container">
+        <h2>Report an Item</h2>
+        <hr>
+        <p>Fill in the details below</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <label>TYPE</label>
+            <br>
+            <input type="radio" id="lost" name="type" value="Lost">
+            <label for="lost">Lost</label>
+            <input type="radio" id="found" name="type" value="Found" checked>
+            <label for="found">Found</label>
+            <br><br>
+
+            <label for="title">TITLE</label>
+            <br>
+            <input type="text" id="title" name="title" placeholder="e.g. Black Umbrella">
+            <br><br>
+
+            <label for="category">CATEGORY</label>
+            <br>
+            <input type="text" id="category" name="category" value="Electronics">
+            <br><br>
+
+            <label for="description">DESCRIPTION</label>
+            <br>
+            <textarea id="description" name="description" rows="4" cols="40" placeholder="Briefly describe the item — brand, color, any marks..."></textarea>
+            <br><br>
+
+            <label for="location">LOCATION</label>
+            <br>
+            <input type="text" id="location" name="location" value="Library, 2nd Floor">
+            <br><br>
+
+            <label for="date">DATE</label>
+            <br>
+            <input type="text" id="date" name="date" value="13/08/2026">
+            <br><br>
+
+            <label for="image">UPLOAD IMAGE</label>
+            <br>
+            <input type="file" id="image" name="image">
+            <br><br>
+
+            <button type="submit">Submit Report</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
